@@ -5,7 +5,7 @@ const fs = require('fs/promises');
 const path = require('path');
 
 const app = express();
-const port = process.env.PORT || 3000; // Port 3000 (gleich wie Next.js-Server)
+const port = process.env.PORT || 3001; // Port 3000 (gleich wie Next.js-Server)
 
 app.use(cors());
 app.use(bodyParser.json());
