@@ -12,7 +12,7 @@ const Home = () => {
 
   const loadData = async () => {
     try {
-      const response = await fetch('http://localhost:3001/api/getData');
+      const response = await fetch('/api/getData');
       const jsonData = await response.json();
       setDisplayedData(jsonData);
     } catch (error) {
@@ -22,7 +22,7 @@ const Home = () => {
 
   const handleInputSubmit = async () => {
     try {
-      const response = await fetch('http://localhost:3001/api/saveData', {
+      const response = await fetch('/api/saveData', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
