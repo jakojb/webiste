@@ -19,7 +19,7 @@ const DisplayPage = () => {
 
   const loadData = async () => {
     try {
-      const response = await fetch('/api/getData');
+      const response = await fetch('http:localhost:3001/api/getData');
       const jsonData = await response.json();
       setData(jsonData);
     } catch (error) {
